@@ -1,5 +1,6 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
+
 import PackageDescription
 
 let package = Package(
@@ -18,10 +19,11 @@ let package = Package(
     targets: [
         .target(
             name: "SocketRocket",
-            path: "SocketRocket",
+            path: "Sources/SocketRocket",
             publicHeadersPath: "PublicHeaders",
             cSettings: [
-                .headerSearchPath("Internal/**"),
+                .headerSearchPath("Internal"),
+                .define("BRIDGING_HEADER", to: "SocketRocket/SocketRocket-Bridging-Header.h")
             ]
         ),
     ]
