@@ -20,7 +20,7 @@ let package = Package(
             path: "SocketRocket",
             publicHeadersPath: "PublicHeaders",
             cSettings: [
-                .headerSearchPath("Internal/**"),
+                .headerSearchPath("Internal"),
             ]
         ),
     ]
