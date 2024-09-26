@@ -212,4 +212,3 @@ Please read our [contributing guidelines](https://github.com/facebook/SocketRock
  [carthage-link]: https://github.com/carthage/carthage
 
  [platforms-svg]: http://img.shields.io/cocoapods/p/SocketRocket.svg?style=flat
-# SocketRockit
